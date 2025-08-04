@@ -1,1 +1,57 @@
+Table buku {
+  id_buku integer [primary key]
+  judul varchar
+  pengarang varchar
+  penerbit varchar
+  tahun_terbit year
+  stok integer
+}
 
+Table anggota{
+  id_anggota integer [primary key]
+  nama varchar
+  alamat text
+  nomor_telephone varchar
+  tanggal_daftar date
+}
+
+Table petugas{
+  id_petugas integer [primary key]
+  nama_petugas varchar
+  username varchar
+  password varchar 
+}
+
+Table peminjaman{
+  id_pinjam integer [primary key]
+  id_anggota integer [primary key]
+  id_petugas integer [primary key]
+  tanggal_pinjam date
+  batas_pinjam date
+}
+
+Table detail_pinjam{
+  id_detail integer [primary key]
+  id_pinjam integer [primary key]
+  id_buku integer [primary key]
+  jumlah integer
+}
+
+Table pengembalian{
+  id_kembali integer [primary key]
+  id_pinjam integer [primary key]
+  tanggal_kembali date
+  denda decimal
+}
+
+
+
+Ref: "anggota"."id_anggota" < "peminjaman"."id_anggota"
+
+Ref: "petugas"."id_petugas" < "peminjaman"."id_petugas"
+
+Ref: "peminjaman"."id_pinjam" < "detail_pinjam"."id_detail"
+
+Ref: "buku"."id_buku" < "detail_pinjam"."id_buku"
+
+Ref: "pengembalian"."id_pinjam" < "detail_pinjam"."id_pinjam"
