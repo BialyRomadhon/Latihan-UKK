@@ -1,3 +1,8 @@
-Proyek ini merupakan aplikasi Sistem Informasi Peminjaman Buku Perpustakaan berbasis (Web/Desktop) yang bertujuan untuk memudahkan proses manajemen buku, anggota, serta transaksi peminjaman dan pengembalian buku di perpustakaan. Aplikasi ini dibangun dalam rangka memenuhi tugas Uji Kompetensi Keahlian (UKK) dan diharapkan dapat menjadi solusi digitalisasi layanan perpustakaan yang selama ini masih dilakukan secara manual.
+# 📚 Perpusic
 
-Dengan adanya sistem ini, pihak perpustakaan dapat melakukan pencatatan data buku dan anggota secara terstruktur, serta memproses transaksi peminjaman dan pengembalian dengan lebih cepat, akurat, dan minim kesalahan.
+![Logo Perpusic](perpusic.svg)  
+
+## 🏫 Aplikasi Perpustakaan Digital - Perpusic
+
+**Perpusic** adalah aplikasi perpustakaan digital yang digunakan untuk mempermudah proses peminjaman dan pengelolaan buku secara online.  
+Dibuat untuk mengurangi proses manual, meningkatkan efisiensi, serta memastikan pencatatan data koleksi dan peminjaman buku yang rapi.
